@@ -216,8 +216,11 @@ exec --no-startup-id dunst -config ~/.config/dunst/dunst
 exec_always --no-startup-id nitrogen --restore &
 
 # screenshots SCROT
-bindsym --release Print exec ~/.local/share/scrot/screenshot select
-bindsym Shift+Print exec ~/.local/share/scrot/screenshot window
+# bindsym --release Print exec ~/.local/share/scrot/screenshot select
+# bindsym Shift+Print exec ~/.local/share/scrot/screenshot window
+
+# screenshot FLAMESHOT
+bindsym Print exec flameshot gui
 
 # Key bindings for Media control keys
 bindsym XF86AudioPlay exec playerctl play
